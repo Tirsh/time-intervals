@@ -1,8 +1,10 @@
 @import "./reset.scss";
 @import "./variables/global.scss";
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 .app {
-    font: var(--font-family-main);
-    background: var(--bg-color);
-    min-height: 100vh;
+  font: var(--font-family-main);
+  background: var(--bg-color);
+  min-height: 100vh;
 }

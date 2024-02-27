@@ -1,0 +1,44 @@
+.event-slider {
+  position: relative;
+  &__button {
+    position: absolute;
+    top: 50px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: none;
+    background: #fff;
+    box-shadow: 0px 0px 15px 0px rgba(56, 119, 238, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &_left {
+      left: -50px;
+    }
+    &_right {
+      right: -50px;
+    }
+    &_disabled {
+      opacity: 0;
+    }
+  }
+  &__button svg {
+    width: auto;
+    height: auto;
+  }
+}
+
+.swiper-pagination-bullets {
+  display: none;
+}
+
+@media (max-width: 960px) {
+  .event-slider {
+    &__button {
+      display: none;
+    }
+  }
+  .swiper-pagination-bullets {
+    display: inline-block;
+  }
+}

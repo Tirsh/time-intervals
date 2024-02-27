@@ -1,9 +1,22 @@
 :root {
   --font-family-main: "PT Sans", sans-serif;
+  --font-family-year: "Bebas Neue", sans-serif;
 
-  --bg-color: rgb(229, 229, 229);
+  --bg-color: #F4F5F9;
   --content-width: 1440px;
   --Black-blue: rgb(66, 86, 122);
   --Blue: rgb(93, 95, 239);
   --Red: rgb(239, 93, 168);
+}
+
+@media (max-width: 1440px) {
+  :root {
+    --content-width: 1140px;
+  }
+}
+
+@media (max-width: 1140px) {
+  :root {
+    --content-width: 960px;
+  }
 }
