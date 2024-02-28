@@ -4,7 +4,7 @@ import TimeIntervals from "./components/time-intervals/TimeIntervals";
 import {PeriodType} from "./components/time-intervals/context/TimeIntervalsProvider";
 
 
-const data: PeriodType[] = [
+const testData: PeriodType[] = [
     {
         id: "0",
         title: "Космос",
@@ -20,15 +20,15 @@ const data: PeriodType[] = [
                 description: "Телескоп «Хаббл» обнаружил самую удалённую из всех обнаруженных галактик, получившую обозначение GN-z11",
             },
             {
-                year: 1510,
+                year: 1520,
                 description: "13 сентября — частное солнечное затмение, видимое в Южной Африке и части Антарктиды",
             },
             {
-                year: 1515,
+                year: 1535,
                 description: "Телескоп «Хаббл» обнаружил самую удалённую из всех обнаруженных галактик, получившую обозначение GN-z11",
             },
             {
-                year: 1510,
+                year: 1540,
                 description: "13 сентября — частное солнечное затмение, видимое в Южной Африке и части Антарктиды",
             },
             {
@@ -43,6 +43,14 @@ const data: PeriodType[] = [
         yearStart: 1700,
         yearEnd: 1750,
         eventsList: [
+            {
+                year: 1710,
+                description: "13 сентября — частное солнечное затмение, видимое в Южной Африке и части Антарктиды",
+            },
+            {
+                year: 1715,
+                description: "Телескоп «Хаббл» обнаружил самую удалённую из всех обнаруженных галактик, получившую обозначение GN-z11",
+            },
             {
                 year: 1710,
                 description: "13 сентября — частное солнечное затмение, видимое в Южной Африке и части Антарктиды",
@@ -107,7 +115,7 @@ const data: PeriodType[] = [
 const App = () => {
     return (
         <div className={"app"}>
-            <TimeIntervals list={data} title="Исторические даты"/>
+            <TimeIntervals list={testData} title="Исторические даты"/>
         </div>
     );
 };
